@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: inherit;
+  font-family: "Poppins", sans-serif;
+  font-style: inherit;
+  font-size: 100%;
+}
+
+.button_one {
+  width: 160px;
+  height: 46px;
+  background-color: #6C63FF;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 82px;
+}
+body .header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+body .header img {
+  width: 100%;
+}
+body .countdwo_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .countdwo_box .countdwo_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6C63FF;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+@media screen and (max-width: 500px) {
+  body .countdwo_box .countdwo_title {
+    margin-left: 10px;
+  }
+}
+body .countdwo_box .display_countdown_container {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+body .countdwo_box .display_countdown_container icon {
+  font-size: 4.5rem;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+body .countdwo_box .display_countdown_container .display_countdown_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 92px;
+  text-align: center;
+}
+body .countdwo_box .display_countdown_container .display_countdown_item .display_countdown_item_title {
+  font-size: 0.875rem;
+  color: #C8C8C8;
+  font-weight: 300;
+}
+body .countdwo_box .display_countdown_container .display_countdown_item .display_countdown_item_number {
+  font-size: 4.5rem;
+  font-weight: 400;
+  width: 100%;
+}
+body .countdwo_box .countdwo_text {
+  font-size: 0.875rem;
+  color: #9C9AB6;
+  margin-top: 40px;
+}
+body .countdwo_box .button_one {
+  margin-top: 31px;
+}
+@media (max-width: 500px) {
+  body .countdwo_box {
+    margin: 0 10px 0 10px;
+  }
+  body .countdwo_box .display_countdown_container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 1250px) {
+  body .image_box {
+    display: none;
+  }
+}
+body .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+body .footer img {
+  width: 100%;
+}
+body .model_box {
+  background-color: rgba(156, 154, 182, 0.6);
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+body .model_box .model_box_content {
+  background-color: white;
+  padding: 10px 30px;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 30px;
+  max-width: 500px;
+  width: 100%;
+  height: 400px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+}
+body .model_box .model_box_content .model_box_exit {
+  align-self: flex-end;
+  padding: 10px;
+}
+body .model_box .model_box_content .user_box {
+  position: relative;
+}
+body .model_box .model_box_content .user_box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #4D4C59;
+  margin-bottom: 30px;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 2px solid #6C63FF;
+  padding-left: 60px;
+  transition: all 0.6s ease;
+}
+body .model_box .model_box_content .user_box input:focus, body .model_box .model_box_content .user_box input:valid {
+  padding-left: 10px;
+}
+body .model_box .model_box_content .user_box input:focus ~ label, body .model_box .model_box_content .user_box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #6C63FF;
+  font-size: 0.875rem;
+}
+body .model_box .model_box_content .user_box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #4D4C59;
+  pointer-events: none;
+  transition: 0.5s;
+}
+body .model_box .model_box_content .button_one {
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

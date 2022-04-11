@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="./images/top-image.svg" alt=""> 
+    </div>
+    <section class="countdwo_box">
+        <p class="countdwo_title">Ready to launch in...</p>
+        <div class="display_countdown_container">
+            <div class="display_countdown_item">
+                <div class="display_countdown_item_title">Dias</div>
+                <div class="display_countdown_item_number" id="days">00</div>
+            </div>
+            <icon>:</icon>
+            <div class="display_countdown_item">
+                <div class="display_countdown_item_title">Horas</div>
+                <div class="display_countdown_item_number" id="hours">00</div>
+            </div>
+            <icon>:</icon>
+            <div class="display_countdown_item">
+                <div class="display_countdown_item_title">Minutos</div>
+                <div class="display_countdown_item_number" id="minutes">00</div>
+            </div>
+            <icon>:</icon>
+            <div class="display_countdown_item">
+                <div class="display_countdown_item_title">Segundos</div>
+                <div class="display_countdown_item_number" id="seconds">00</div>
+            </div>
+        </div>
+        <p class="countdwo_text">Inscreva-se para saber mais sobre o lançamento</p>
+        <button class="countdwo_box_button button_one">Inscreva-se</button>
+    </section>
+    <section class="image_box">
+        <img src="./images/rocket.svg" alt="">
+    </section>
+    <div class="footer">
+        <img src="./images/bottom-image.svg" alt="">
+    </div>
+        <div class="model_box">
+            <form class="model_box_content" action="">
+                <div class="model_box_exit">❌</div>
+                <div class="user_box">
+                    <input type="text" name="username" id="username" required>
+                    <label for="username">Nome:</label>
+                </div>
+                <div class="user_box">
+                    <input type="email" name="useremail" id="useremail" required>
+                    <label for="useremail">E-Mail:</label>
+                </div>
+                <button type="submit" class="model_box_button button_one">Enviar</button>
+            </form>
+        </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
