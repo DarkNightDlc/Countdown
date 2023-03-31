@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
-$black: #4D4C59;
+$black: #9C9AB6;
 $purple: #6C63FF;
-$light-grey: #C8C8C8;
-$text-color: #9C9AB6;
+$light-grey: #4D4C59;
+$text-color: #C8C8C8;
+
 * {
     border: 0;
     outline: 0;
@@ -23,6 +24,11 @@ $text-color: #9C9AB6;
     font-size: 1rem;
     font-weight: 400;
     color: white;
+    cursor: pointer;
+
+    &:hover{
+        filter: brightness(130%);
+    }
 }
 body {
     height: 100vh;
@@ -136,8 +142,12 @@ body {
             height: 400px;
             box-shadow: 10px 5px 5px rgba(0,0,0,0.3);
             .model_box_exit{
+                position: relative;
                 align-self: flex-end;
                 padding: 10px;
+                cursor: pointer;
+                right: -20px;
+                top: -5px;
             }
             .user_box{
                 position: relative;

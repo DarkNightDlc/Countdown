@@ -19,6 +19,10 @@
   font-size: 1rem;
   font-weight: 400;
   color: white;
+  cursor: pointer;
+}
+.button_one:hover {
+  filter: brightness(130%);
 }
 
 body {
@@ -75,7 +79,7 @@ body .countdwo_box .display_countdown_container .display_countdown_item {
 }
 body .countdwo_box .display_countdown_container .display_countdown_item .display_countdown_item_title {
   font-size: 0.875rem;
-  color: #C8C8C8;
+  color: #4D4C59;
   font-weight: 300;
 }
 body .countdwo_box .display_countdown_container .display_countdown_item .display_countdown_item_number {
@@ -85,7 +89,7 @@ body .countdwo_box .display_countdown_container .display_countdown_item .display
 }
 body .countdwo_box .countdwo_text {
   font-size: 0.875rem;
-  color: #9C9AB6;
+  color: #C8C8C8;
   margin-top: 40px;
 }
 body .countdwo_box .button_one {
@@ -115,7 +119,7 @@ body .footer img {
   width: 100%;
 }
 body .model_box {
-  background-color: rgba(156, 154, 182, 0.6);
+  background-color: rgba(200, 200, 200, 0.6);
   display: none;
   flex-direction: column;
   position: absolute;
@@ -138,8 +142,12 @@ body .model_box .model_box_content {
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
 }
 body .model_box .model_box_content .model_box_exit {
+  position: relative;
   align-self: flex-end;
   padding: 10px;
+  cursor: pointer;
+  right: -20px;
+  top: -5px;
 }
 body .model_box .model_box_content .user_box {
   position: relative;
@@ -148,7 +156,7 @@ body .model_box .model_box_content .user_box input {
   width: 100%;
   padding: 10px 0;
   font-size: 1rem;
-  color: #4D4C59;
+  color: #9C9AB6;
   margin-bottom: 30px;
   outline: none;
   background-color: transparent;
@@ -172,7 +180,7 @@ body .model_box .model_box_content .user_box label {
   padding: 10px 0;
   font-size: 1rem;
   font-weight: 700;
-  color: #4D4C59;
+  color: #9C9AB6;
   pointer-events: none;
   transition: 0.5s;
 }

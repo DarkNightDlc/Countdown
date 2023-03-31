@@ -3,7 +3,7 @@ const hoursEl = document.querySelector('#hours');
 const minutesEl = document.querySelector('#minutes');
 const secondsEl = document.querySelector('#seconds');
 
-const launchDate = new Date("9 May 2022 18:30:50");
+const launchDate = new Date("May 09, 2023 12:00:00");
 
 function countdown(){
     const now = new Date();
@@ -14,13 +14,19 @@ function countdown(){
     const m = Math.floor(diff / 1000 / 60 % 60);
     const s = Math.floor(diff / 1000 % 60);
 
-    daysEl.innerHTML = d;
-    hoursEl.innerHTML = h < 10 ? '0' + h : h;
-    minutesEl.innerHTML = m < 10 ? '0' + m : m;
-    secondsEl.innerHTML = s < 10 ? '0' + s : s; 
+    if(diff <= 0){
+        clearInterval(timerCountdown);
+        document.querySelector(".countdwo_box_button").style.display = "none";
+        document.querySelector(".countdwo_box_exit").style.display = "block";
+    }
+        daysEl.innerHTML = d;
+        hoursEl.innerHTML = h < 10 ? '0' + h : h;
+        minutesEl.innerHTML = m < 10 ? '0' + m : m;
+        secondsEl.innerHTML = s < 10 ? '0' + s : s; 
+    
 }
 
-setInterval(() => countdown(), 1000);
+const timerCountdown = setInterval(() => countdown(), 1000);
 
 const modal = document.querySelector('.model_box');
 
